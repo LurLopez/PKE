@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mobile Prototipoa</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .card-hover:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- Goiko barra -->
+  <nav class="navbar navbar-light bg-white shadow-sm px-3">
+    <!-- Menu botoia -->
+    <button class="btn btn-outline-secondary border-0 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+      <i class="bi bi-list fs-4"></i>
+    </button>
+
+    <span class="navbar-brand mx-auto fw-bold text-truncate">Gradu Amaierako Lanaren Araudia</span>
+
+    <button class="btn btn-outline-secondary border-0 ms-2">
+      <i class="bi bi-search fs-4"></i>
+    </button>
+  </nav>
+
+  <!-- Offcanvas menu -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menua</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Itxi"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li class="mb-2">
+          <a href="araudia.html" class="text-decoration-none text-dark fw-semibold">
+            <i class="bi bi-book-fill me-2"></i> Araudia
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="aurrekolanak.html" class="text-decoration-none text-dark">
+            <i class="bi bi-folder-fill me-2"></i> Aurreko lanak
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="egutegia.html" class="text-decoration-none text-dark">
+            <i class="bi bi-calendar-event me-2"></i> Deialdien egutegia
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="galdetegia.html" class="text-decoration-none text-dark">
+            <i class="bi bi-question-circle-fill me-2"></i> Galdetegia
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Gorputzeko edukia -->
+  <div class="container text-center my-4">
+    <h2 class="fw-bold">Ingeniaritza Informatikako Gradua</h2>
+  </div>
+
+  <!-- Lau botoi/atal -->
+  <div class="container text-center mt-5">
+    <div class="row g-3">
+
+      <!-- Araudia -->
+      <div class="col-12 col-md-6">
+        <a href="araudia.html" class="text-decoration-none text-dark">
+          <div class="p-3 bg-white rounded-4 shadow-sm card-hover">
+            <i class="bi bi-book-fill fs-1 text-success"></i>
+            <p class="mt-2 mb-0 fw-semibold">Araudia</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Aurreko lanak -->
+      <div class="col-12 col-md-6">
+        <a href="aurrekolanak.html" class="text-decoration-none text-dark">
+          <div class="p-3 bg-white rounded-4 shadow-sm card-hover">
+            <i class="bi bi-folder-fill fs-1 text-primary"></i>
+            <p class="mt-2 mb-0">Aurreko lanak</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Deialdien egutegia -->
+      <div class="col-12 col-md-6">
+        <a href="egutegia.html" class="text-decoration-none text-dark">
+          <div class="p-3 bg-white rounded-4 shadow-sm card-hover">
+            <i class="bi bi-calendar-event fs-1 text-warning"></i>
+            <p class="mt-2 mb-0">Deialdien egutegia</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Galdetegia -->
+      <div class="col-12 col-md-6">
+        <a href="galdetegia.html" class="text-decoration-none text-dark">
+          <div class="p-3 bg-white rounded-4 shadow-sm card-hover">
+            <i class="bi bi-question-circle-fill fs-1 text-danger"></i>
+            <p class="mt-2 mb-0">Galdetegia</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
